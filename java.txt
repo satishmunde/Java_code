@@ -1,0 +1,449 @@
+Increment decrement operator
+    Increment operator
+        pre-Increment operator
+            first write the updated value and then increse the value by one. 
+            i++;
+
+        post-Increment operator
+            fist update the value and then increse the value by one
+            ++i;
+
+
+            --> the Increment is always by one.
+
+    decrement operator
+    pre-decrement operator
+        first write the updated value and then decrease the value
+            i--;
+
+    post-decrement operator
+        first update the value then decrease the value by one
+            --i;
+
+
+logical operator
+    logical AND operator : - 
+        con1 && con2 -- result
+        t    &&   t  -- t
+        f    &&   t  -- f
+        t    &&   f  -- f
+        f    &&   f  -- f
+
+
+    logical OR operator :
+        con1 || con2 -- result
+        t    ||    t  -- t
+        f    ||    t  -- t
+        t    ||    f  -- t
+        f    ||    f  -- f
+
+    
+    logical Not Operator :
+        !(con2) -- result 
+            if the condition is true it will make it false
+
+    the return type of logical operator is boolean
+
+Conditional Operator
+    syntax 
+        stmt1 ? stmt2 : stmt3;
+
+    write the java program to find the largest of two number
+    package Demo;
+
+public class Largnum {
+	public static void main(String[] args) {
+		int a=20;
+		int b = 30;
+		
+		boolean res = a>b?true:false;
+		int c = a>b?a:b;
+		System.out.println(res);
+		System.out.println(c);
+	}
+
+
+}
+wap to find largest of three number
+
+Design making Statement
+    if{
+
+        //Statement
+    } 
+    if-else
+    if(con1)
+    {
+        //Statement
+    }
+    else{
+        //Statement
+    }
+    if-else-if
+    if(con)
+    {
+        //Statement
+    }
+    else if(con2)
+    {
+        //Statement
+    }
+
+    if -- write a java program to print the number if only it is the even
+    package Demo;
+
+        public class Design {
+            public static void main(String[] args) {
+                int a= 20;
+                if(a%2 == 0)
+                {
+                    System.out.println(a+" is Even");
+                }
+            }
+        }
+
+if-else  wap to check if the given number is even or oddpackage Demo;
+
+        public class Design {
+            public static void main(String[] args) {
+                int a= 21;
+                if(a%2 == 0)
+                {
+                    System.out.println(a+" is Even");
+                }
+                else
+                {
+                    System.out.println(a+" is Odd");
+                }
+            }
+        }
+
+wap to find the largest o two number
+
+public class Large {
+	public static void main(String[] args) {
+        	int a=10;
+		int b= 20;
+		
+		if(a>b) {
+			System.out.println(" a is grater than b");
+		}
+		else {
+			System.out.println( " b is grater than a");
+		}
+	}
+}
+
+
+if-else if --- 
+
+switch 
+
+package Demo;
+
+public class Switch {
+	public static void main(String[] args) {
+        int a=10;
+		int b= 20;
+
+        	
+		int choice= 1;
+		switch(choice) {
+		case(1):{
+			System.out.println("addition is " + (a+b));
+		}
+		break;
+		case(2):{
+			System.out.println("difference is " + (a-b));
+		}
+		break;
+		default:{
+			System.out.println("Exciding the renge");
+		}
+		}
+		
+	}
+}
+
+
+
+decigion control Statementfa-spin   
+    in order to execute a Statement multiple times we make use of dicision control Statement 
+    there are three dicision control Statement 
+    while loop
+    do while loop
+    for loop
+
+        Note -- Every looping Statement consist of a starting point {initilization,test condition,} and updation
+
+    while loop ---> 
+        syntax
+            int i = 1;
+            while(conditon)
+            {
+
+                Statements
+
+                Value Updation / --  i++, i--
+
+            }
+
+    wap to print hello word 10 times
+        package Demo;
+
+        public class Loop {
+
+            public static void main(String[] args) {
+                // TODO Auto-generated method stub
+                
+                int i = 1;
+                while(i<=10) {
+                    System.out.println("Hello World");
+                    i++;
+                }
+
+            }
+
+        }
+
+
+    Do While Loop -- 
+    do{
+        Statement
+
+        updation
+    }while(condition);
+
+            package Demo;
+
+        public class Loop {
+
+            public static void main(String[] args) {
+                // TODO Auto-generated method stub
+                
+                int i = 1 ;
+                do {
+                    System.out.println("Hello World");
+                    
+                    i++;
+                }while(i<=10);
+
+            }
+
+        }
+
+
+                    
+            difference between while 
+                1) the minimum number of iteration is zero
+                2) if the Statement is false no iteration will be perform.
+
+            do while
+                minimum number of iteration are one
+                unlike while loop do while execures once even with false condition
+
+    for loop    
+
+        syntax
+            for(initilization;condition;update)
+            {
+                
+            }
+
+task of a constructor
+	to load non static initilizer
+	to load non static members(Methods and variable)
+	to execute programmer written instruction.
+
+	
+member of class -
+    method
+    constructor 
+    initilizing
+
+constructors : - 
+    it is special type of method which perform a specific task but does't have a return type
+        
+        main Functions of a constructor
+            to load non static  initilizer
+            to load non static members (methods and variable)
+            to execute programmer written instruction
+types of a constructor
+    default constructor 
+    user Defined constructor 
+
+
+    default constructor
+        when a programmer doen't write for constructor then the compiler implicit ly create constructor that is called default constructor
+        default constructor assign default values to the member of the classes.
+
+
+    class Car{
+        static String brand = "BMW";
+        String name;
+        String color;
+        double price;
+    }
+
+    class CarDriver{
+        Car c1 = new Car();
+        System.out.println(c1.brand);
+        System.out.println(c1.name);
+        System.out.println(c1.color);
+        System.out.println(c1.price) ;
+    }
+
+user defined 
+
+    no  argumetn or zero parameteried constructor
+    argument or parameterized constructor
+
+
+    user defined constructor's are explicitly called by the programmer by object creation and passing the argument to the specific constructor 
+
+this 
+
+    this is a keyword 
+    this keyword refer's to the current calling object reference 
+    this keyword help's in differcienting local and global variable
+
+
+
+
+constructor calling another constructor is known as constructor chaining
+    in java we can achive by using two ways
+    this calling statement 
+        it used to call the constructor at the same class from another constructor
+        rules :
+            this can be used only inside the constructor
+            it should be always first statement in the constructor
+            the resersive call the the constructor is not allowed
+            if a class has n number of constructor we can use this statement for n-1 constructor only
+
+    super calling statement
+
+    
+
+    Principle of OOPS 
+        incapsulation
+            wrapping property and behavior inside a single unit is 
+            the process of binding or wrapping the state and behavior of an object in a unit is known as incapsulation        
+            we can achive instruction in java with the help of class and interface class has both variables and method of an object
+
+            advantage of incapsulation
+                by using incapsulation we can achive the data hiding 
+
+                data hiding 
+                    it is a process of restrticting the direct access of the data member of an object and provides indirect secured acccess of data Member via method
+                    of a some object is know as data hiding
+                    
+        polymorphisms
+        inheritance
+        abstraction
+
+
+is-a relationship 
+    the association betweent two objects similar to parent and child class is known as is-a relationship
+    note : - 
+        in is-a relationship the child object will have all the property of parent object
+        and extra property of child object
+        therefore the parent can be generalize type and child can be specilized type.
+
+
+    inheritance 
+        the process of obtaing or aquaring are the properties of one object to another
+
+        the object which is receiving the properties is known as derived , child , subclass.
+        the object which is provideing the properties is known as parent, super base 
+
+    how to achive inheritance in java
+        we can achive inheritance in java by using keyword called extends or impliments
+
+        what are the members are inherited between two class
+
+        except private members and initilizers  of a class all the other members of the class are inherited
+
+    diamond problem
+        assume there are two classes A and B and both are having the method with the same signature then class C inherits A and B and these two 
+        methods are inherited to c
+        then ambuguity arrise when we try to call the super class method with the help of sub class reference 
+        so this problem is known as diamond problem
+
+has-a relationship
+  
+  Hybrid inheritance 
+    the combination of multiple inheritance and hyrachical inheritence is know as hybrid inheritance
+
+
+    type casting in non primitative
+         converting one non primitative datatype to another non primitative datatype is know as non primitative type cast
+
+         note : 
+            non primitative type casting can be achive in following sichuvations 
+
+            case 1: both the classes have is a relationship
+            case 2: we can convert one type to another type even thos they dont have is a relationship but have a common child
+
+
+        UPCASTING :
+            the process of converting subclass reference  type into super class reference is is know as up casting
+            up-casting can be done by the compiler as well as by the programmer (like widening implicitly )
+
+        DOWNCASTING
+            converting super class reference type in to subclass reference is know as down-casting
+            down casting is not possible by compiler 
+
+            case 1: if you need to perfrom downcast upcast is compolsary 
+            case 2: class cast exception it is an exception that accource when  the referencs is downcast to subclass type and that object does not have instance of 
+            the subclass type 
+
+    
+    Super Statement
+        super is a keyword it is used to access the member of the super class
+ 
+    Super call statement
+
+        super call statement is used to call the constructor of the parent classs from child class constructor
+        purpose of 
+
+        when the object is created the super call statement helps to load the members of the parent class into the child class
+        we can also use the super call statment to pass the data from sub class to super class
+        
+
+
+polymorphisms
+
+    polymorphisms is derived form two different greek word poly - many morphs -  froms / state
+    polymorphisms is the ability of an object to exehibite more than one form with same name
+
+    types of polymorphisms
+    1) compile time polymorphisms
+        if the binding is achived at the compile time and the same behavior executed it is known as compiler time error
+        note  ; binding -  association of your method call the method defination is called as binding
+
+        how to achive compiler time polymorphisms
+        method overloading
+        constructor overloading
+        oparator overloading    
+        method shadow
+
+    2) runtime polymorphisms
+        if the binding is achived at the compile time and th different behavior executed at runtime is known as runtime polymorphisms 
+        
+
+        rule to achive method overriding
+            both the method should be non-static
+            is-a relationship is mandaroty
+            same method signature
+            
+        abstraction
+            it is a process of hiding the implimentation and showing only Functionality (only diclaration) to the user is known as abstraction
+
+            how to achive abstraction
+                in java we can achive abstraction with the help of abstract class and interfaces
+
+        
+    interface 
+        it is a componationing java which is used to achive 100% abstraction with the multiple interitance
+        what are all the member are not inherited from an interface 
+        so only static methods are not inherited in interface and class
